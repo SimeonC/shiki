@@ -77,7 +77,7 @@ export function renderToHtml(lines: IThemedToken[][], options: HtmlRendererOptio
                 token,
                 index
               },
-              [escapeHtml(token.content)]
+              [options.rawHtml ? token.content : escapeHtml(token.content)]
             )
           })
         )

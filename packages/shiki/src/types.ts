@@ -196,6 +196,7 @@ export interface HtmlRendererOptions {
   bg?: string
   lineOptions?: LineOption[]
   elements?: ElementsOptions
+  rawHtml?: boolean
 }
 
 export interface LineOption {
